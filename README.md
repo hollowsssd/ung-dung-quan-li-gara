@@ -1,1 +1,1 @@
-Người thực hiện: Trần Nhật Hoàng, Nguyễn công minh, Phạm Đình Văn
+Người thực hiện: Trần Nhật Hoàng, Nguyễn Công Minh, Phạm Đình Văn
