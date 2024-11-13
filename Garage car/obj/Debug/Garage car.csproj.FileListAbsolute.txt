@@ -1,0 +1,27 @@
+C:\Users\ASUS\source\repos\Garage car\Garage car\bin\Debug\Garage car.exe.config
+C:\Users\ASUS\source\repos\Garage car\Garage car\bin\Debug\Garage car.exe
+C:\Users\ASUS\source\repos\Garage car\Garage car\bin\Debug\Garage car.pdb
+C:\Users\ASUS\source\repos\Garage car\Garage car\bin\Debug\Guna.UI2.dll
+C:\Users\ASUS\source\repos\Garage car\Garage car\obj\Debug\Garage car.csproj.AssemblyReference.cache
+C:\Users\ASUS\source\repos\Garage car\Garage car\obj\Debug\Garage_car.Properties.Resources.resources
+C:\Users\ASUS\source\repos\Garage car\Garage car\obj\Debug\Garage car.csproj.GenerateResource.cache
+C:\Users\ASUS\source\repos\Garage car\Garage car\obj\Debug\Garage car.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\source\repos\Garage car\Garage car\obj\Debug\Garage car.csproj.Up2Date
+C:\Users\ASUS\source\repos\Garage car\Garage car\obj\Debug\Garage car.exe
+C:\Users\ASUS\source\repos\Garage car\Garage car\obj\Debug\Garage car.pdb
+C:\Users\ASUS\source\repos\Garage car\Garage car\obj\Debug\Garage_car.Login.resources
+C:\Users\ASUS\source\repos\Garage car\Garage car\obj\Debug\Garage_car.Dashbord.resources
+C:\Users\ASUS\source\repos\Garage car\Garage car\bin\Debug\Bunifu.Dataviz.WinForms.dll
+C:\Users\ASUS\source\repos\Garage car\Garage car\bin\Debug\Bunifu.Licensing.dll
+C:\Users\ASUS\source\repos\Garage car\Garage car\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+C:\Users\ASUS\source\repos\Garage car\Garage car\bin\Debug\Bunifu.Dataviz.WinForms.xml
+C:\Users\ASUS\source\repos\Garage car\Garage car\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml
+C:\Users\ASUS\source\repos\Garage car\Garage car\obj\Debug\Garage_car.Loading.resources
+C:\Users\ASUS\source\repos\Garage car\Garage car\obj\Debug\Garage_car.Customer.resources
+C:\Users\ASUS\source\repos\Garage car\Garage car\obj\Debug\Garage_car.Oder.resources
+C:\Users\ASUS\source\repos\Garage car\Garage car\obj\Debug\Garage_car.Appointment.resources
+C:\Users\ASUS\source\repos\Garage car\Garage car\obj\Debug\Garage_car.Guarantee.resources
+C:\Users\ASUS\source\repos\Garage car\Garage car\obj\Debug\Garage_car.Inventory.resources
+C:\Users\ASUS\source\repos\Garage car\Garage car\obj\Debug\Garage_car.Invoices.resources
+C:\Users\ASUS\source\repos\Garage car\Garage car\obj\Debug\Garage_car.Service.resources
+C:\Users\ASUS\source\repos\Garage car\Garage car\obj\Debug\Garage_car.Employees.resources

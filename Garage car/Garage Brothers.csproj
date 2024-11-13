@@ -1,0 +1,607 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{52C107E3-DB91-49D9-98FD-856B06BC4691}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Garage_car</RootNamespace>
+    <AssemblyName>Garage car</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.Dataviz.WinForms, Version=2.2.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.Dataviz.WinForms.2.2.1\lib\Bunifu.Dataviz.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.Licensing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.Dataviz.WinForms.2.2.1\lib\Bunifu.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Bunifu.UI.WinForms.1.5.3.2.0.0\lib\net452\Bunifu.UI.WinForms.1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="CairoSharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.CrossPlatform.Printing.DrawingEngine.1.0.14\lib\netstandard2.0\CairoSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.CrossPlatform.Printing.DrawingEngine, Version=1.0.14.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.CrossPlatform.Printing.DrawingEngine.1.0.14\lib\netstandard2.0\DevExpress.CrossPlatform.Printing.DrawingEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="GLibSharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.CrossPlatform.Printing.DrawingEngine.1.0.14\lib\netstandard2.0\GLibSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1652.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1652.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1652.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1652.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebDesign, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1652.0\lib\net40\Microsoft.ReportViewer.WebDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.150.1652.0\lib\net40\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="PangoSharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.CrossPlatform.Printing.DrawingEngine.1.0.14\lib\netstandard2.0\PangoSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Common, Version=4.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Drawing.Common.4.7.0\lib\net461\System.Drawing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="khachhang\capnhatkhachhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="khachhang\capnhatkhachhang.Designer.cs">
+      <DependentUpon>capnhatkhachhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nhanvien\capnhatnhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nhanvien\capnhatnhanvien.Designer.cs">
+      <DependentUpon>capnhatnhanvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chuoiconnect.cs" />
+    <Compile Include="ComboBoxItem.cs" />
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="donhang\taohoadon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="donhang\taohoadon.Designer.cs">
+      <DependentUpon>taohoadon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dichvuvaphutung\themdv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dichvuvaphutung\themdv.Designer.cs">
+      <DependentUpon>themdv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dichvuvaphutung\themphuttungcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dichvuvaphutung\themphuttungcs.Designer.cs">
+      <DependentUpon>themphuttungcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lichhen\xoasualichhen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lichhen\xoasualichhen.Designer.cs">
+      <DependentUpon>xoasualichhen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reporting\DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="user control\DonHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="user control\DonHang.Designer.cs">
+      <DependentUpon>DonHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user control\KhachHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="user control\KhachHang.Designer.cs">
+      <DependentUpon>KhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user control\LichHen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="user control\LichHen.Designer.cs">
+      <DependentUpon>LichHen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loading.Designer.cs">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user control\NhanVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="user control\NhanVien.Designer.cs">
+      <DependentUpon>NhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user control\NhapHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="user control\NhapHang.Designer.cs">
+      <DependentUpon>NhapHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user control\dichvuvaPhuTung.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="user control\dichvuvaPhuTung.Designer.cs">
+      <DependentUpon>dichvuvaPhuTung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="nhanvien\themnhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nhanvien\themnhanvien.Designer.cs">
+      <DependentUpon>themnhanvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="khachhang\Themkhachhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="khachhang\Themkhachhang.Designer.cs">
+      <DependentUpon>Themkhachhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lichhen\themlichhen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lichhen\themlichhen.Designer.cs">
+      <DependentUpon>themlichhen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="donhang\thongtinchitiethoadon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="donhang\thongtinchitiethoadon.Designer.cs">
+      <DependentUpon>thongtinchitiethoadon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user control\TrangChu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="user control\TrangChu.Designer.cs">
+      <DependentUpon>TrangChu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dichvuvaphutung\xoasuadv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dichvuvaphutung\xoasuadv.Designer.cs">
+      <DependentUpon>xoasuadv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dichvuvaphutung\xoavacapnhatphutung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dichvuvaphutung\xoavacapnhatphutung.Designer.cs">
+      <DependentUpon>xoavacapnhatphutung.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="khachhang\capnhatkhachhang.resx">
+      <DependentUpon>capnhatkhachhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nhanvien\capnhatnhanvien.resx">
+      <DependentUpon>capnhatnhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="donhang\taohoadon.resx">
+      <DependentUpon>taohoadon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dichvuvaphutung\themdv.resx">
+      <DependentUpon>themdv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dichvuvaphutung\themphuttungcs.resx">
+      <DependentUpon>themphuttungcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lichhen\xoasualichhen.resx">
+      <DependentUpon>xoasualichhen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user control\DonHang.resx">
+      <DependentUpon>DonHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user control\KhachHang.resx">
+      <DependentUpon>KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user control\LichHen.resx">
+      <DependentUpon>LichHen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loading.resx">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user control\NhanVien.resx">
+      <DependentUpon>NhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user control\NhapHang.resx">
+      <DependentUpon>NhapHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user control\dichvuvaPhuTung.resx">
+      <DependentUpon>dichvuvaPhuTung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="nhanvien\themnhanvien.resx">
+      <DependentUpon>themnhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="khachhang\Themkhachhang.resx">
+      <DependentUpon>Themkhachhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lichhen\themlichhen.resx">
+      <DependentUpon>themlichhen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="donhang\thongtinchitiethoadon.resx">
+      <DependentUpon>thongtinchitiethoadon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user control\TrangChu.resx">
+      <DependentUpon>TrangChu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dichvuvaphutung\xoasuadv.resx">
+      <DependentUpon>xoasuadv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dichvuvaphutung\xoavacapnhatphutung.resx">
+      <DependentUpon>xoavacapnhatphutung.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="reporting\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="reporting\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="reporting\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\car-mechanic-vector-illustration_6130917.png!bw700" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z5668515905527_4e59c9b21acdbb5d612a5f76dfcef67c.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fbb4f7a17772a81dccdd80005c7adcc3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_25px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_25px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\auto-mechanic-logo-design-template-5328d70a16d3588ee54243c099ff9490_screen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-cartoon-mechanic-stands-beside-a-car-on-a-sticker-imzalat-vector-png-image_12233189.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_25px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize_window_25pxdf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\78775244-gear-vector-icon-black-and-white-gears-illustration-outline-linear-icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-cartoon-mechanic-stands-beside-a-car-on-a-sticker-imzalat-vector-png-image_122331891.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-cartoon-mechanic-stands-beside-a-car-on-a-sticker-imzalat-vector-png-image_122331892.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\451442475_1434828963897620_4402257287229021998_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-cartoon-mechanic-stands-beside-a-car-on-a-sticker-imzalat-vector-png-image_122331893.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-cartoon-mechanic-stands-beside-a-car-on-a-sticker-imzalat-vector-png-image_122331894.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_25px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_25px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-cartoon-mechanic-stands-beside-a-car-on-a-sticker-imzalat-vector-png-image_122331896.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_50px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_25px3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_25px3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer Details.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_25px4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-business-male-icon-vector-png-image_916468.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_25px5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5556468.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\55564681.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5053161_tren_tay_gara_auto_only_quan7_xe_tinh_te-4.jpg" />
+    <None Include="Resources\dua_xe_f1_20230411060745.jpg" />
+    <None Include="Resources\do-xe-o-to-02.jpg" />
+    <None Include="Resources\tải xuống %283%29.png" />
+    <None Include="Resources\form-icon-5.jpg" />
+    <None Include="Resources\hang-do-noi-tieng-nhat-ban-liberty-walk-chinh-thuc-co-mat-tai-vi-f144de1.jpg" />
+    <None Include="Resources\25694.png" />
+    <None Include="Resources\hang-do-noi-tieng-nhat-ban-liberty-walk-chinh-thuc-co-mat-tai-vi-f144de.jpg" />
+    <None Include="Resources\hang-do-noi-tieng-nhat-ban-liberty-walk-chinh-thuc-co-mat-tai-vi-2a5c82.jpg" />
+    <None Include="Resources\54206.png" />
+    <None Include="Resources\pngtree-reports-icon-for-your-project-png-image_48162553.jpg" />
+    <None Include="Resources\pngtree-reports-icon-for-your-project-png-image_48162552.jpg" />
+    <None Include="Resources\pngtree-reports-icon-for-your-project-png-image_48162551.jpg" />
+    <None Include="Resources\pngtree-reports-icon-for-your-project-png-image_4816255.jpg" />
+    <None Include="Resources\786695.png" />
+    <None Include="Resources\kisspng-bar-chart-statistics-computer-icons-clip-art-business-statistics-5b32ed42569974.0469936915300641943547.jpg" />
+    <None Include="Resources\images %284%29.png" />
+    <None Include="Resources\images %283%29.jfif" />
+    <None Include="Resources\4736372.png" />
+    <None Include="Resources\7d88c32e032382d75fe0299f616093b7.jpg" />
+    <None Include="Resources\images %282%29.jfif" />
+    <None Include="Resources\pngtree-dollars-money-and-coins-vector-png-image_117380321.png" />
+    <None Include="Resources\pngtree-dollars-money-and-coins-vector-png-image_11738032.png" />
+    <None Include="Resources\images %283%29.png" />
+    <None Include="Resources\inventory-icon-for-your-website-mobile-presentation-and-logo-design-free-vector.jpg" />
+    <None Include="Resources\tải xuống %282%291.png" />
+    <None Include="Resources\customer registration1.png" />
+    <None Include="Resources\pngtree-calendar-icon-creative-design-template-png-image_52590043.jpg" />
+    <None Include="Resources\pngtree-calendar-icon-creative-design-template-png-image_52590042.jpg" />
+    <None Include="Resources\pngtree-calendar-icon-creative-design-template-png-image_52590041.jpg" />
+    <None Include="Resources\pngtree-calendar-icon-creative-design-template-png-image_5259004.jpg" />
+    <None Include="Resources\tải xuống %282%29.png" />
+    <None Include="Resources\pngtree-car-icon-graphic-design-template-vector-isolated-png-image_5147065.jpg" />
+    <None Include="Resources\customer registration.png" />
+    <None Include="Resources\check out.png" />
+    <None Include="Resources\7-kinh-nghiem-can-biet-khi-mo-gara-o-to.jpg" />
+    <None Include="Resources\b00d0cdbf06fab3b2d8cc6847a014495.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z5687037040076_2396551c1306d9b779ed883694a81b3f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z5687037040076_2396551c1306d9b779ed883694a81b3f1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Designer.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Designer1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Designer2.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_50px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize_window_25pxdf1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\autopro-gara-sieu-xe-cuong-dola-1590710810416728485140.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MySpace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer registration2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Web Apps.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Toolbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Support.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User Male.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\News.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,141 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ASUS\\OneDrive\\M\u00E1y t\u00EDnh\\Garage car\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{52C107E3-DB91-49D9-98FD-856B06BC4691}|Garage car\\Garage Brothers.csproj|C:\\Users\\ASUS\\OneDrive\\M\u00E1y t\u00EDnh\\Garage car\\garage car\\lichhen\\themlichhen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52C107E3-DB91-49D9-98FD-856B06BC4691}|Garage car\\Garage Brothers.csproj|solutionrelative:garage car\\lichhen\\themlichhen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52C107E3-DB91-49D9-98FD-856B06BC4691}|Garage car\\Garage Brothers.csproj|C:\\Users\\ASUS\\OneDrive\\M\u00E1y t\u00EDnh\\Garage car\\garage car\\user control\\donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52C107E3-DB91-49D9-98FD-856B06BC4691}|Garage car\\Garage Brothers.csproj|solutionrelative:garage car\\user control\\donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52C107E3-DB91-49D9-98FD-856B06BC4691}|Garage car\\Garage Brothers.csproj|c:\\users\\asus\\onedrive\\m\u00E1y t\u00EDnh\\garage car\\garage car\\donhang\\taohoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{52C107E3-DB91-49D9-98FD-856B06BC4691}|Garage car\\Garage Brothers.csproj|solutionrelative:garage car\\donhang\\taohoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52C107E3-DB91-49D9-98FD-856B06BC4691}|Garage car\\Garage Brothers.csproj|c:\\users\\asus\\onedrive\\m\u00E1y t\u00EDnh\\garage car\\garage car\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52C107E3-DB91-49D9-98FD-856B06BC4691}|Garage car\\Garage Brothers.csproj|solutionrelative:garage car\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52C107E3-DB91-49D9-98FD-856B06BC4691}|Garage car\\Garage Brothers.csproj|c:\\users\\asus\\onedrive\\m\u00E1y t\u00EDnh\\garage car\\garage car\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{52C107E3-DB91-49D9-98FD-856B06BC4691}|Garage car\\Garage Brothers.csproj|solutionrelative:garage car\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52C107E3-DB91-49D9-98FD-856B06BC4691}|Garage car\\Garage Brothers.csproj|C:\\Users\\ASUS\\OneDrive\\M\u00E1y t\u00EDnh\\Garage car\\garage car\\donhang\\taohoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52C107E3-DB91-49D9-98FD-856B06BC4691}|Garage car\\Garage Brothers.csproj|solutionrelative:garage car\\donhang\\taohoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52C107E3-DB91-49D9-98FD-856B06BC4691}|Garage car\\Garage Brothers.csproj|C:\\Users\\ASUS\\OneDrive\\M\u00E1y t\u00EDnh\\Garage car\\garage car\\user control\\donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{52C107E3-DB91-49D9-98FD-856B06BC4691}|Garage car\\Garage Brothers.csproj|solutionrelative:garage car\\user control\\donhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "taohoadon.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\M\u00E1y t\u00EDnh\\Garage car\\Garage car\\donhang\\taohoadon.cs",
+              "RelativeDocumentMoniker": "Garage car\\donhang\\taohoadon.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\M\u00E1y t\u00EDnh\\Garage car\\Garage car\\donhang\\taohoadon.cs",
+              "RelativeToolTip": "Garage car\\donhang\\taohoadon.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAgwC4AAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T07:54:53.446Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\M\u00E1y t\u00EDnh\\Garage car\\Garage car\\Login.cs",
+              "RelativeDocumentMoniker": "Garage car\\Login.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\M\u00E1y t\u00EDnh\\Garage car\\Garage car\\Login.cs",
+              "RelativeToolTip": "Garage car\\Login.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAawDwAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T03:45:55.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\M\u00E1y t\u00EDnh\\Garage car\\Garage car\\Login.cs",
+              "RelativeDocumentMoniker": "Garage car\\Login.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\M\u00E1y t\u00EDnh\\Garage car\\Garage car\\Login.cs [Design]",
+              "RelativeToolTip": "Garage car\\Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T03:47:52.889Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "taohoadon.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\M\u00E1y t\u00EDnh\\Garage car\\Garage car\\donhang\\taohoadon.cs",
+              "RelativeDocumentMoniker": "Garage car\\donhang\\taohoadon.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\M\u00E1y t\u00EDnh\\Garage car\\Garage car\\donhang\\taohoadon.cs [Design]",
+              "RelativeToolTip": "Garage car\\donhang\\taohoadon.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T07:55:13.282Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DonHang.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\M\u00E1y t\u00EDnh\\Garage car\\Garage car\\user control\\DonHang.cs",
+              "RelativeDocumentMoniker": "Garage car\\user control\\DonHang.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\M\u00E1y t\u00EDnh\\Garage car\\Garage car\\user control\\DonHang.cs",
+              "RelativeToolTip": "Garage car\\user control\\DonHang.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAkwDcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T13:01:30.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DonHang.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\M\u00E1y t\u00EDnh\\Garage car\\Garage car\\user control\\DonHang.cs",
+              "RelativeDocumentMoniker": "Garage car\\user control\\DonHang.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\M\u00E1y t\u00EDnh\\Garage car\\Garage car\\user control\\DonHang.cs [Design]",
+              "RelativeToolTip": "Garage car\\user control\\DonHang.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T13:01:29.084Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "themlichhen.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\M\u00E1y t\u00EDnh\\Garage car\\Garage car\\lichhen\\themlichhen.cs",
+              "RelativeDocumentMoniker": "Garage car\\lichhen\\themlichhen.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\M\u00E1y t\u00EDnh\\Garage car\\Garage car\\lichhen\\themlichhen.cs",
+              "RelativeToolTip": "Garage car\\lichhen\\themlichhen.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAzwCwAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T08:01:14.187Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
